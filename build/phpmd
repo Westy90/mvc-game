@@ -1,0 +1,10 @@
+C:\dbwebb-kurser\mvc\me\game\htdocs\index.php	-	Unexpected token: Mos\Router\Router, line: 9, col: 5, file: C:\dbwebb-kurser\mvc\me\game\htdocs\index.php.
+C:\dbwebb-kurser\mvc\me\game\src\Dice\Dice.php	-	Unexpected token: mawj15\Dice, line: 3, col: 11, file: C:\dbwebb-kurser\mvc\me\game\src\Dice\Dice.php.
+C:\dbwebb-kurser\mvc\me\game\src\Dice\DiceHand.php	-	Unexpected token: mawj15\Dice, line: 3, col: 11, file: C:\dbwebb-kurser\mvc\me\game\src\Dice\DiceHand.php.
+C:\dbwebb-kurser\mvc\me\game\src\Dice\GraphicalDice.php	-	Unexpected token: mawj15\Dice, line: 3, col: 11, file: C:\dbwebb-kurser\mvc\me\game\src\Dice\GraphicalDice.php.
+C:\dbwebb-kurser\mvc\me\game\src\Router\Router.php	-	Unexpected token: Mos\Router, line: 5, col: 11, file: C:\dbwebb-kurser\mvc\me\game\src\Router\Router.php.
+C:\dbwebb-kurser\mvc\me\game\src\functions.php	-	Unexpected token: Mos\Functions, line: 5, col: 11, file: C:\dbwebb-kurser\mvc\me\game\src\functions.php.
+C:\dbwebb-kurser\mvc\me\game\view\debug.php	-	Unexpected token: Mos\Functions, line: 9, col: 14, file: C:\dbwebb-kurser\mvc\me\game\view\debug.php.
+C:\dbwebb-kurser\mvc\me\game\view\dice.php	-	Unexpected token: Mos\Functions, line: 3, col: 14, file: C:\dbwebb-kurser\mvc\me\game\view\dice.php.
+C:\dbwebb-kurser\mvc\me\game\view\header.php	-	Unexpected token: Mos\Functions\url, line: 9, col: 14, file: C:\dbwebb-kurser\mvc\me\game\view\header.php.
+C:\dbwebb-kurser\mvc\me\game\view\session.php	-	Unexpected token: Mos\Functions\url, line: 9, col: 14, file: C:\dbwebb-kurser\mvc\me\game\view\session.php.
