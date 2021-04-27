@@ -12,7 +12,6 @@ class DiceHand
 {
 
     private $dices;
-    private $values;
     private $sum;
     private $amountOfDice;
     private $totalSum = 0;
@@ -20,16 +19,14 @@ class DiceHand
     public function __construct($pAmount = 5)
     {
         $this->dices = [];
-        $this->values = [];
         $this->sum = 0;
         $this->amountOfDice = $pAmount;
 
         for ($i = 0; $i < $pAmount; $i++) {
             $this->dices[$i] = new GraphicalDice();
-            $this->values[$i] = null;
             $this->sum += $this->dices[$i]->getDice();
-            $this->totalSum = $this->totalSum + $this->sum;
         }
+        $this->totalSum = $this->totalSum + $this->sum;
     }
 
     public function getHand()
