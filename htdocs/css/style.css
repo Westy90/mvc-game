@@ -29,3 +29,14 @@ footer {
 .dice-utf8 {
     font-size: 32px;
 }
+
+
+
+table {
+  width: 50%;
+  border-collapse: collapse;
+}
+
+table, th, td {
+  border: 1px solid black;
+}

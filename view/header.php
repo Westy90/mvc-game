@@ -19,6 +19,7 @@ use function Mos\Functions\url;
 
 <body>
 
+
 <header>
     <nav>
         <a href="<?= url("/") ?>">Home</a> |
@@ -28,7 +29,7 @@ use function Mos\Functions\url;
         <a href="<?= url("/some/where") ?>">some/where</a> |
         <a href="<?= url("/no/such/path") ?>">Show 404 example</a> |
         <a href="<?= url("/form/view") ?>">Form view</a> |
-        <a href="<?= url("/dice") ?>">Game 21</a>
+        <a href="<?= url("/dice") ?>">Yatzy</a>
     </nav>
 </header>
 <main>

@@ -10,11 +10,11 @@ namespace mawj15\Dice;
 
 class DiceHand
 {
-
     private $dices;
     private $sum;
     private $amountOfDice;
     private $totalSum = 0;
+    private $occurances;
 
     public function __construct($pAmount = 5)
     {
@@ -48,8 +48,18 @@ class DiceHand
         return $diceHand;
     }
 
+    public function numberOfDicesInHand()
+    {
+        return $this->amountOfDice;
+    }
+
     public function getSum()
     {
+        $this->sum = 0;
+
+        for ($i = 0; $i < $this->amountOfDice; $i++) {
+            $this->sum += $this->dices[$i]->getDice();
+        }
         return $this->sum;
     }
 
@@ -61,13 +71,19 @@ class DiceHand
 
     public function rollDices()
     {
-        $this->sum = 0;
         for ($i = 0; $i < $this->amountOfDice; $i++) {
             $this->dices[$i]->rollDice();
-            $this->sum += $this->dices[$i]->getDice();
         }
-        $this->totalSum = $this->totalSum + $this->sum;
     }
+
+    public function rollSpecificDices($roll)
+    {
+        foreach ($roll as $value)
+        {
+            $this->dices[$value]->rollDice();
+        }
+    }
+
 
     public function getTotalSum()
     {

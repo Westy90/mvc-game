@@ -1,5 +1,14 @@
 phpcpd 6.0.3 by Sebastian Bergmann.
 
-No clones found.
+Found 2 clones with 106 duplicated lines in 2 files:
 
-Time: 00:00.003, Memory: 2.00 MB
+  - C:\dbwebb-kurser\mvc\me\game\src\Router\Router.php:26-81 (55 lines)
+    C:\dbwebb-kurser\mvc\me\game\src\Router\RouterGamla.php:23-78
+
+  - C:\dbwebb-kurser\mvc\me\game\src\Router\Router.php:79-130 (51 lines)
+    C:\dbwebb-kurser\mvc\me\game\src\Router\RouterGamla.php:77-128
+
+9.37% duplicated lines out of 1131 total lines of code.
+Average size of duplication is 53 lines, largest clone has 55 of lines
+
+Time: 00:00.006, Memory: 2.00 MB

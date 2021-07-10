@@ -20,9 +20,6 @@ class Router
 {
     public static function dispatch(string $method, string $path): void
     {
-
-        $body = $method . $path;
-
         if ($method === "GET" && $path === "/") {
             $data = [
                 "header" => "Index page",
@@ -76,7 +73,8 @@ class Router
                 "action" => url("/dice"),
                 "numDice" => $_SESSION["numDice"] ?? null,
             ];
-            $body = renderView("layout/dice.php", $data);
+
+            $body = renderView("/layout/dice.php", $data);
             sendResponse($body);
             return;
         } else if ($method === "POST" && $path === "/dice") {

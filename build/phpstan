@@ -1,5 +1,41 @@
+ ------ ---------------------------------------- 
+ [32m Line [39m [32m config\router.php                      [39m 
+ ------ ---------------------------------------- 
+  13     Variable $router might not be defined.  
+  18     Variable $router might not be defined.  
+  19     Variable $router might not be defined.  
+  20     Variable $router might not be defined.  
+  23     Variable $router might not be defined.  
+  25     Variable $router might not be defined.  
+  26     Variable $router might not be defined.  
+  28     Variable $router might not be defined.  
+  30     Variable $router might not be defined.  
+  40     Variable $router might not be defined.  
+  45     Variable $router might not be defined.  
+ ------ ---------------------------------------- 
 
-[30;42m                                                                                 [39;49m
-[30;42m [OK] No errors                                                                  [39;49m
-[30;42m                                                                                 [39;49m
+ ------ ----------------------------------------------------------------------------------------------------------- 
+ [32m Line [39m [32m src\Controller\DiceProcess.php                                                                            [39m 
+ ------ ----------------------------------------------------------------------------------------------------------- 
+[39;49m  36     Method Mos\Controller\DiceProcess::__invoke() should return Psr\Http\Message\ResponseInterface but return[39;49m[39;49m  [39;49m
+[39;49m         [39;49mstatement is missing.                                                                                      
+ ------ ----------------------------------------------------------------------------------------------------------- 
+
+ ------ --------------------------------------------------------------------------------------------------------- 
+ [32m Line [39m [32m src\Controller\DiceReset.php                                                                            [39m 
+ ------ --------------------------------------------------------------------------------------------------------- 
+[39;49m  28     Method Mos\Controller\DiceReset::__invoke() should return Psr\Http\Message\ResponseInterface but return[39;49m[39;49m  [39;49m
+[39;49m         [39;49mstatement is missing.                                                                                    
+ ------ --------------------------------------------------------------------------------------------------------- 
+
+ ------ ------------------------------------------------------------------------------------------------------------------ 
+ [32m Line [39m [32m src\Controller\DiceSave.php                                                                                      [39m 
+ ------ ------------------------------------------------------------------------------------------------------------------ 
+[39;49m  33     Method Mos\Controller\DiceSave::__invoke() should return Psr\Http\Message\ResponseInterface but return statement[39;49m[39;49m  [39;49m
+[39;49m         [39;49mis missing.                                                                                                       
+ ------ ------------------------------------------------------------------------------------------------------------------ 
+
+[37;41m                                                                                                                        [39;49m
+[37;41m [ERROR] Found 14 errors                                                                                                [39;49m
+[37;41m                                                                                                                        [39;49m
 
