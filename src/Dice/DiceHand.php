@@ -12,6 +12,7 @@ class DiceHand
 {
     private $dices;
     private $sum;
+    private $average;
     private $amountOfDice;
     private $totalSum = 0;
     private $occurances;
@@ -48,6 +49,7 @@ class DiceHand
         return $diceHand;
     }
 
+
     public function numberOfDicesInHand()
     {
         return $this->amountOfDice;
@@ -65,7 +67,13 @@ class DiceHand
 
     public function getAvg()
     {
-        return $this->sum / count($this->dices);
+        $this->average = 0;
+
+        for ($i = 0; $i < $this->amountOfDice; $i++) {
+            $this->average += $this->dices[$i]->getDice();
+        }
+
+        return $this->average / count($this->dices);
     }
 
 
@@ -84,9 +92,18 @@ class DiceHand
         }
     }
 
-
-    public function getTotalSum()
+    public function setDices($die0, $die1, $die2, $die3, $die4)
     {
-        return $this->totalSum;
+        $setDices = [$die0, $die1, $die2, $die3, $die4];
+
+        for ($i = 0; $i < 5; $i++)
+        {
+            $this->dices[$i]->setRolledDice($setDices[$i]);
+        }
     }
+
+
+
+
+
 }

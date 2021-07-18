@@ -94,3 +94,11 @@ if (!$_SESSION["Yatzy"]) {
         echo "</form>";
     ?>
 </p>
+
+<pre>
+<?= var_dump($_SESSION["Yatzy"]->getFirstHalf()) ?>
+</pre>
+
+<pre>
+<?= var_dump($_SESSION["Yatzy"]->getFirstHalfSum()) ?>
+</pre>

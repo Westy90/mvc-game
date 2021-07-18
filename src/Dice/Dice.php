@@ -37,4 +37,17 @@ class Dice
     {
         return $this->rolledDice;
     }
+
+    public function getMax()
+    {
+        return $this->maxValue;
+    }
+
+    public function setRolledDice($pDie)
+    {
+        $this->rolledDice = $pDie;
+    }
+
+
+
 }

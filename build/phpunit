@@ -1,0 +1,29 @@
+PHPUnit 9.5.6 by Sebastian Bergmann and contributors.
+
+......EEE................................                         41 / 41 (100%)
+
+Time: 00:04.095, Memory: 22.00 MB
+
+There were 3 errors:
+
+1) Mos\Controller\ControllerFormTest::testCreateTheControllerClass
+Error: Class "Mos\Controller\Form" not found
+
+C:\dbwebb-kurser\mvc\me\game\test\Controller\ControllerFormTest.php:20
+
+2) Mos\Controller\ControllerFormTest::testControllerViewAction
+Error: Class "Mos\Controller\Form" not found
+
+C:\dbwebb-kurser\mvc\me\game\test\Controller\ControllerFormTest.php:30
+
+3) Mos\Controller\ControllerFormTest::testControllerProcessAction
+Error: Class "Mos\Controller\Form" not found
+
+C:\dbwebb-kurser\mvc\me\game\test\Controller\ControllerFormTest.php:45
+
+ERRORS!
+Tests: 41, Assertions: 94, Errors: 3.
+
+Generating code coverage report in Clover XML format ... done [00:00.244]
+
+Generating code coverage report in HTML format ... done [00:00.467]

@@ -27,6 +27,17 @@ class Yatzy
         return $this->diceHand->getGraphicHand();
     }
 
+
+    public function getDiceHandNumeric()
+    {
+        return $this->diceHand->getHand();
+    }
+
+    public function getFullDiceHand()
+    {
+        return $this->diceHand;
+    }
+
     public function rollSpecificDices($specificDie)
     {
         $this->diceHand->rollSpecificDices($specificDie);
@@ -39,6 +50,11 @@ class Yatzy
         return $this->diceHand->getSum();
     }
 
+    public function getAvgYatzy()
+    {
+        return $this->diceHand->getAvg();
+    }
+
     public function getRound()
     {
         return $this->round;
@@ -48,7 +64,7 @@ class Yatzy
     public function getHandOccurances()
     {
         $occurances = [0, 0, 0, 0, 0, 0, 0];
-        for ($i = 1; $i < 7; $i++) 
+        for ($i = 1; $i < 7; $i++)
         {
             for ($j = 0; $j < $this->diceHand->numberOfDicesInHand(); $j++)
             {
@@ -90,4 +106,13 @@ class Yatzy
         $this->diceHand = new DiceHand();
         $this->round = 1;
     }
+
+
+    public function setDicesInHand($die0, $die1, $die2, $die3, $die4)
+    {
+        $this->diceHand->setDices($die0, $die1, $die2, $die3, $die4);
+    }
+
+
+
 }

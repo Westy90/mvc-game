@@ -10,6 +10,12 @@ declare(strict_types=1);
 
 use FastRoute\RouteCollector;
 
+$router = $router ?? new RouteCollector(
+    new \FastRoute\RouteParser\Std(),
+    new \FastRoute\DataGenerator\MarkBased()
+);
+
+
 $router->addRoute("GET", "/test", function () {
     // A quick and dirty way to test the router or the request.
     return "Testing response";
@@ -37,10 +43,12 @@ $router->addGroup("/dice", function (RouteCollector $router) {
 */
 
 
+
 $router->addGroup("/session", function (RouteCollector $router) {
     $router->addRoute("GET", "", ["\Mos\Controller\Session", "index"]);
     $router->addRoute("GET", "/destroy", ["\Mos\Controller\Session", "destroy"]);
 });
+
 
 $router->addGroup("/some", function (RouteCollector $router) {
     $router->addRoute("GET", "/where", ["\Mos\Controller\Sample", "where"]);

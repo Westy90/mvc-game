@@ -33,6 +33,3 @@ class DiceSave
         redirectTo(url("/dice"));
     }
 }
-
-
-//
